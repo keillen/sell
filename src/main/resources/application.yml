@@ -1,18 +1,24 @@
 spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
     url: jdbc:mysql://192.168.2.115/sell?characterEncoding=utf-8&useSSL=false
   jpa:
-    show-sql: true
+      show-sql: true
   jackson:
     default-property-inclusion: non_null
   freemarker:
     suffix: .ftl
+
 server:
   servlet:
     context-path: /sell
+
 wechat:
   mpAppId: wx64a6168da19b46dd
   mpAppSecret: fa92000a7a8500874f6d79c36bf6e88d
